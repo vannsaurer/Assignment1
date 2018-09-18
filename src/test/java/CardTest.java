@@ -12,7 +12,7 @@ public class CardTest extends TestCase {
   @Test
   public void testGetValueAsString(){
     Card card = new Card(2,3);
-    assertEquals(2, card.getValueAsString());
+    assertEquals("2", card.getValueAsString());
   }
   @Test
   public void testToString() {
