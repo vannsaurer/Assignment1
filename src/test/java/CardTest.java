@@ -4,11 +4,22 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 public class CardTest extends TestCase {
   @Test
-  public void getSuitAsString() {
+  public void testGetSuitAsString() {
     Card card = new Card(10,1);
-    assertEquals(10, card.getSuitAsString());
-    
+    assertEquals("H", card.getSuitAsString());
+
   }
+  @Test
+  public void testGetValueAsString(){
+    Card card = new Card(2,3);
+    assertEquals(2, card.getValueAsString());
+  }
+  @Test
+  public void testToString() {
+    Card card = new Card(10,1);
+    assertEquals("H10",card.toString());
+  }
+
 
 
 
