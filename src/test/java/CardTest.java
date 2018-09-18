@@ -7,7 +7,7 @@ public class CardTest extends TestCase {
   public void testGetSuitAsString() {
     Card card = new Card(10,1);
     assertEquals("H", card.getSuitAsString());
- 
+
   }
   @Test
   public void testGetValueAsString(){
